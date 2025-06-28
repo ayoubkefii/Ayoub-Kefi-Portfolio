@@ -104,7 +104,7 @@ const Home = () => {
               transition={{ duration: 0.7, delay: 0.1 }}
               className="flex justify-center mb-6">
               <img
-                src="/ayoub.JPG"
+                src={`${import.meta.env.BASE_URL}ayoub.JPG`}
                 alt="Ayoub Kefi"
                 className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-blue-500 shadow-lg object-cover bg-white dark:bg-slate-800"
                 style={{ objectFit: "cover" }}
