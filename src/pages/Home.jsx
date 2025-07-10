@@ -151,16 +151,17 @@ const Home = () => {
             {/* CTA Buttons */}
             <motion.div
               variants={itemVariants}
-              className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="btn-primary flex items-center space-x-2">
-                <span>View My Work</span>
-                <ArrowRight size={20} />
-              </motion.button>
-
+              className="flex flex-col sm:flex-row gap-4 justify-center">
               <ResumeDownload />
+              <Link to="/projects">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="btn-secondary">
+                  <span>View My Work</span>
+                  <ArrowRight size={20} />
+                </motion.button>
+              </Link>
             </motion.div>
 
             {/* Stats */}
