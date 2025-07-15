@@ -133,7 +133,7 @@ const About = () => {
                       Email:
                     </span>
                     <span className="font-medium text-gray-900 dark:text-white">
-                      ayoubelkefi@gmail.com
+                      ayoubelkefi11@gmail.com
                     </span>
                   </div>
                   <div className="flex justify-between">

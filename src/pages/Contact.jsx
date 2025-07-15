@@ -7,6 +7,8 @@ import {
   Send,
   CheckCircle,
   AlertCircle,
+  Github,
+  Linkedin,
 } from "lucide-react";
 import ScrollReveal from "../components/ScrollReveal";
 import emailjs from "emailjs-com";
@@ -76,7 +78,7 @@ const Contact = () => {
       setSubmitStatus("success");
       setFormData({ name: "", email: "", subject: "", message: "" });
       setTimeout(() => setSubmitStatus(null), 3000);
-    } catch (error) {
+    } catch {
       setIsSubmitting(false);
       setSubmitStatus("error");
       setTimeout(() => setSubmitStatus(null), 3000);
@@ -180,24 +182,38 @@ const Contact = () => {
                     Follow Me
                   </h3>
                   <div className="flex space-x-4">
-                    {["GitHub", "LinkedIn", "Twitter"].map(
-                      (platform, index) => (
-                        <motion.a
-                          key={platform}
-                          href="#"
-                          initial={{ opacity: 0, scale: 0 }}
-                          whileInView={{ opacity: 1, scale: 1 }}
-                          viewport={{ once: true }}
-                          transition={{ delay: index * 0.1 }}
-                          whileHover={{ scale: 1.1, rotate: 5 }}
-                          whileTap={{ scale: 0.9 }}
-                          className="p-3 glass-effect rounded-full hover:bg-white/10 transition-all duration-300">
-                          <span className="text-gray-700 dark:text-gray-300 font-medium">
-                            {platform}
-                          </span>
-                        </motion.a>
-                      )
-                    )}
+                    <motion.a
+                      href="https://github.com/ayoubkefii"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      initial={{ opacity: 0, scale: 0 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0 }}
+                      whileHover={{ scale: 1.1, rotate: 5 }}
+                      whileTap={{ scale: 0.9 }}
+                      className="p-3 glass-effect rounded-full hover:bg-white/10 transition-all duration-300">
+                      <Github
+                        className="text-gray-700 dark:text-gray-300"
+                        size={24}
+                      />
+                    </motion.a>
+                    <motion.a
+                      href="https://www.linkedin.com/in/kefiayoub/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      initial={{ opacity: 0, scale: 0 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.1 }}
+                      whileHover={{ scale: 1.1, rotate: 5 }}
+                      whileTap={{ scale: 0.9 }}
+                      className="p-3 glass-effect rounded-full hover:bg-white/10 transition-all duration-300">
+                      <Linkedin
+                        className="text-gray-700 dark:text-gray-300"
+                        size={24}
+                      />
+                    </motion.a>
                   </div>
                 </div>
               </motion.div>
