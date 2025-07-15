@@ -29,7 +29,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "ayoubelkefi@gmail.com",
+      value: "ayoubelkefi11@gmail.com",
       link: "mailto:ayoubelkefi@gmail.com",
     },
     {

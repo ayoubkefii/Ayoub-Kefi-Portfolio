@@ -4,28 +4,23 @@ import ScrollReveal from "../components/ScrollReveal";
 
 const About = () => {
   const skills = [
-    { name: "React", icon: Code, level: 90 },
-    { name: "Angular", icon: Code, level: 85 },
-    { name: "Flutter", icon: Code, level: 80 },
-    { name: "HTML", icon: Code, level: 90 },
-    { name: "CSS", icon: Code, level: 90 },
-    { name: "JavaScript", icon: Code, level: 85 },
-    { name: "TypeScript", icon: Code, level: 80 },
+    { name: "React", icon: Code, level: 65 },
+    { name: "Angular", icon: Code, level: 70 },
+    { name: "Flutter", icon: Code, level: 70 },
+    { name: "HTML", icon: Code, level: 100 },
+    { name: "CSS", icon: Code, level: 100 },
+    { name: "JavaScript", icon: Code, level: 75 },
+    { name: "TypeScript", icon: Code, level: 75 },
     { name: "Tailwind CSS", icon: Palette, level: 85 },
-    { name: "Framer Motion", icon: Palette, level: 80 },
-    { name: "PHP", icon: Code, level: 80 },
-    { name: "Symfony", icon: Code, level: 75 },
+    { name: "PHP", icon: Code, level: 90 },
+    { name: "Symfony", icon: Code, level: 90 },
     { name: "Node.js", icon: Code, level: 80 },
     { name: "Express.js", icon: Code, level: 75 },
     { name: "LoopBack", icon: Code, level: 75 },
-    { name: "MySQL", icon: Database, level: 80 },
-    { name: "MongoDB", icon: Database, level: 75 },
-    { name: "JWT Auth", icon: Zap, level: 80 },
+    { name: "MySQL", icon: Database, level: 95 },
+    { name: "JWT Auth", icon: Zap, level: 90 },
     { name: "REST APIs", icon: Zap, level: 85 },
-    { name: "Firebase", icon: Database, level: 70 },
     { name: "Git/GitHub", icon: Globe, level: 85 },
-    { name: "Vite", icon: Globe, level: 80 },
-    { name: "VS Code", icon: Globe, level: 90 },
   ];
 
   const containerVariants = {
@@ -252,8 +247,40 @@ const About = () => {
 
           {/* Modern Timeline/Experience Cards */}
           <div className="space-y-8">
-            {/* Junior Web Developer (Training & Projects) */}
+            {/* Web Developer - Personal Project */}
             <ScrollReveal direction="left" delay={0.1}>
+              <motion.div className="glass-effect rounded-xl p-8 flex flex-col md:flex-row md:items-center md:justify-between">
+                <div className="flex items-center mb-4 md:mb-0">
+                  <span className="text-purple-600 dark:text-purple-400 text-3xl mr-4">
+                    🚀
+                  </span>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                      Web Developer – Personal Projects
+                    </h3>
+                    <div className="text-blue-600 dark:text-blue-400 font-medium">
+                      Personal Development
+                    </div>
+                    <div className="text-gray-600 dark:text-gray-400 text-sm">
+                      📍 Tunisia (Remote) — January 2024 – January 2025
+                    </div>
+                  </div>
+                </div>
+                <ul className="list-disc ml-10 text-gray-600 dark:text-gray-400 text-sm space-y-1 mt-2 md:mt-0">
+                  <li>Designed and developed a complete web application</li>
+                  <li>
+                    Implemented dynamic features with a modern user interface
+                  </li>
+                  <li>
+                    Focused on user experience, performance, and autonomous
+                    project management
+                  </li>
+                </ul>
+              </motion.div>
+            </ScrollReveal>
+
+            {/* Junior Web Developer (Training & Projects) */}
+            <ScrollReveal direction="right" delay={0.2}>
               <motion.div className="glass-effect rounded-xl p-8 flex flex-col md:flex-row md:items-center md:justify-between">
                 <div className="flex items-center mb-4 md:mb-0">
                   <span className="text-blue-600 dark:text-blue-400 text-3xl mr-4">
@@ -284,7 +311,7 @@ const About = () => {
             </ScrollReveal>
 
             {/* Academic & Freelance Projects */}
-            <ScrollReveal direction="right" delay={0.2}>
+            <ScrollReveal direction="left" delay={0.2}>
               <motion.div className="glass-effect rounded-xl p-8 flex flex-col md:flex-row md:items-center md:justify-between">
                 <div className="flex items-center mb-4 md:mb-0">
                   <span className="text-green-600 dark:text-green-400 text-3xl mr-4">
@@ -325,7 +352,7 @@ const About = () => {
             </ScrollReveal>
 
             {/* Computer Maintenance Technician */}
-            <ScrollReveal direction="left" delay={0.3}>
+            <ScrollReveal direction="right" delay={0.3}>
               <motion.div className="glass-effect rounded-xl p-8 flex flex-col md:flex-row md:items-center md:justify-between">
                 <div className="flex items-center mb-4 md:mb-0">
                   <span className="text-yellow-500 dark:text-yellow-400 text-3xl mr-4">
@@ -362,7 +389,7 @@ const About = () => {
             </ScrollReveal>
 
             {/* Network Technician (Training) */}
-            <ScrollReveal direction="right" delay={0.4}>
+            <ScrollReveal direction="left" delay={0.4}>
               <motion.div className="glass-effect rounded-xl p-8 flex flex-col md:flex-row md:items-center md:justify-between">
                 <div className="flex items-center mb-4 md:mb-0">
                   <span className="text-indigo-500 dark:text-indigo-400 text-3xl mr-4">
@@ -393,7 +420,7 @@ const About = () => {
             </ScrollReveal>
 
             {/* Junior Web Developer (Freelance & Academic) */}
-            <ScrollReveal direction="left" delay={0.5}>
+            <ScrollReveal direction="right" delay={0.5}>
               <motion.div className="glass-effect rounded-xl p-8 flex flex-col md:flex-row md:items-center md:justify-between">
                 <div className="flex items-center mb-4 md:mb-0">
                   <span className="text-blue-500 dark:text-blue-400 text-3xl mr-4">
@@ -446,7 +473,7 @@ const About = () => {
             </ScrollReveal>
 
             {/* Computer Technician (Self-employed) */}
-            <ScrollReveal direction="right" delay={0.6}>
+            <ScrollReveal direction="left" delay={0.6}>
               <motion.div className="glass-effect rounded-xl p-8 flex flex-col md:flex-row md:items-center md:justify-between">
                 <div className="flex items-center mb-4 md:mb-0">
                   <span className="text-yellow-600 dark:text-yellow-400 text-3xl mr-4">

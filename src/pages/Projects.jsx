@@ -18,19 +18,58 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "SUP4 DEV – FlutterLearn",
+      title: "Task Manager",
       description:
-        "A mobile e-learning app built with Flutter and a PHP/MySQL backend (REST API, JWT auth).",
+        "A comprehensive task management application built with Angular and LoopBack for efficient project organization and team collaboration.",
       image:
-        "https://images.unsplash.com/photo-1513258496099-48168024aec0?w=500&h=300&fit=crop",
-      category: "mobile",
-      technologies: ["Flutter", "PHP", "MySQL", "REST API", "JWT"],
+        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=300&fit=crop",
+      category: "web",
+      technologies: ["Angular", "LoopBack", "TypeScript", "Node.js"],
       featured: true,
       rating: 5,
       date: "2024",
     },
     {
       id: 2,
+      title: "Conference Manager",
+      description:
+        "A Symfony-based conference management system for organizing events, managing attendees, and coordinating schedules.",
+      image:
+        "https://images.unsplash.com/photo-1511578314322-379afb476865?w=500&h=300&fit=crop",
+      category: "web",
+      technologies: ["Symfony", "PHP", "MySQL", "Twig"],
+      featured: true,
+      rating: 5,
+      date: "2024",
+    },
+    {
+      id: 3,
+      title: "E-Learning Platform",
+      description:
+        "A comprehensive e-learning platform built with Symfony framework for course management and student progress tracking.",
+      image:
+        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=300&fit=crop",
+      category: "web",
+      technologies: ["Symfony", "PHP", "MySQL", "Bootstrap"],
+      featured: false,
+      rating: 5,
+      date: "2024",
+    },
+    {
+      id: 4,
+      title: "LearnUp",
+      description:
+        "A PHP native e-learning application with user authentication, course management, and interactive learning features.",
+      image:
+        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500&h=300&fit=crop",
+      category: "web",
+      technologies: ["PHP", "MySQL", "JavaScript", "CSS"],
+      featured: false,
+      rating: 4,
+      date: "2024",
+    },
+    {
+      id: 5,
       title: "Camping Web App",
       description:
         "A Symfony-based web app for renting camping gear, suggesting materials, and organizing events.",
@@ -43,7 +82,20 @@ const Projects = () => {
       date: "2023",
     },
     {
-      id: 3,
+      id: 6,
+      title: "SUP4 DEV – FlutterLearn",
+      description:
+        "A mobile e-learning app built with Flutter and a PHP/MySQL backend (REST API, JWT auth).",
+      image:
+        "https://images.unsplash.com/photo-1513258496099-48168024aec0?w=500&h=300&fit=crop",
+      category: "mobile",
+      technologies: ["Flutter", "PHP", "MySQL", "REST API", "JWT"],
+      featured: false,
+      rating: 5,
+      date: "2024",
+    },
+    {
+      id: 7,
       title: "Recipe Book App",
       description:
         "A full-stack Angular + LoopBack app with recipe listing, filtering, and favorites.",
@@ -56,7 +108,7 @@ const Projects = () => {
       date: "2023",
     },
     {
-      id: 4,
+      id: 8,
       title: "Portfolio Website",
       description:
         "My personal portfolio built with React, Tailwind, and Framer Motion.",
@@ -69,14 +121,14 @@ const Projects = () => {
       date: "2024",
     },
     {
-      id: 5,
+      id: 9,
       title: "E-Commerce Platform",
       description:
-        "A React/Node.js/MongoDB app with authentication and product management.",
+        "A React/Node.js/MySQL app with authentication and product management.",
       image:
         "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
       category: "web",
-      technologies: ["React", "Node.js", "MongoDB", "JWT"],
+      technologies: ["React", "Node.js", "MySQL", "JWT"],
       featured: false,
       rating: 5,
       date: "2024",
