@@ -1,12 +1,15 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Twitter, Mail, Heart } from "lucide-react";
+import { Github, Linkedin, Mail, Heart } from "lucide-react";
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-    { icon: Mail, href: "mailto:contact@example.com", label: "Email" },
+    { icon: Github, href: "https://github.com/ayoubkefii", label: "GitHub" },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/kefiayoub/",
+      label: "LinkedIn",
+    },
+    { icon: Mail, href: "mailto:ayoubelkefi11@gmail.com", label: "Email" },
   ];
 
   const footerVariants = {
@@ -68,13 +71,13 @@ const Footer = () => {
             transition={{ delay: 0.4 }}
             className="text-center text-gray-400 text-sm">
             <p className="flex items-center justify-center space-x-1">
-              <span>© 2024 Portfolio. Made with</span>
+              <span>© 2025 Ayoub Kefi. Crafted with</span>
               <motion.div
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ duration: 1, repeat: Infinity, repeatDelay: 2 }}>
                 <Heart size={16} className="text-red-500" />
               </motion.div>
-              <span>using React & Framer Motion</span>
+              <span>by a passionate developer</span>
             </p>
           </motion.div>
         </div>

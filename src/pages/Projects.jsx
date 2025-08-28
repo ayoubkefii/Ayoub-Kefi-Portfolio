@@ -18,6 +18,28 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: "Ticketing System",
+      description:
+        "A comprehensive ticketing management system built with Laravel 11, featuring role-based authentication (demandeur, agent, admin), real-time notifications using Laravel WebSockets, and full CRUD operations for tickets and stock management.",
+      image:
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
+      category: "web",
+      technologies: [
+        "Laravel 11",
+        "PHP",
+        "MySQL",
+        "Blade",
+        "TailwindCSS",
+        "Laravel WebSockets",
+        "Real-time Notifications",
+      ],
+      featured: true,
+      rating: 5,
+      date: "2025",
+      githubUrl: "https://github.com/ayoubkefii/ticketing-system",
+    },
+    {
+      id: 2,
       title: "Task Manager",
       description:
         "A comprehensive task management application built with Angular and LoopBack for efficient project organization and team collaboration.",
@@ -27,10 +49,11 @@ const Projects = () => {
       technologies: ["Angular", "LoopBack", "TypeScript", "Node.js"],
       featured: true,
       rating: 5,
-      date: "2024",
+      date: "2025",
+      githubUrl: "https://github.com/ayoubkefii/task-manager",
     },
     {
-      id: 2,
+      id: 3,
       title: "Conference Manager",
       description:
         "A Symfony-based conference management system for organizing events, managing attendees, and coordinating schedules.",
@@ -40,10 +63,11 @@ const Projects = () => {
       technologies: ["Symfony", "PHP", "MySQL", "Twig"],
       featured: true,
       rating: 5,
-      date: "2024",
+      date: "2025",
+      githubUrl: "https://github.com/ayoubkefii/conference-manager",
     },
     {
-      id: 3,
+      id: 4,
       title: "E-Learning Platform",
       description:
         "A comprehensive e-learning platform built with Symfony framework for course management and student progress tracking.",
@@ -53,10 +77,11 @@ const Projects = () => {
       technologies: ["Symfony", "PHP", "MySQL", "Bootstrap"],
       featured: false,
       rating: 5,
-      date: "2024",
+      date: "2025",
+      githubUrl: "https://github.com/ayoubkefii/e-learning-platform",
     },
     {
-      id: 4,
+      id: 5,
       title: "LearnUp",
       description:
         "A PHP native e-learning application with user authentication, course management, and interactive learning features.",
@@ -66,10 +91,11 @@ const Projects = () => {
       technologies: ["PHP", "MySQL", "JavaScript", "CSS"],
       featured: false,
       rating: 4,
-      date: "2024",
+      date: "2025",
+      githubUrl: "https://github.com/ayoubkefii/learnup",
     },
     {
-      id: 5,
+      id: 6,
       title: "Camping Web App",
       description:
         "A Symfony-based web app for renting camping gear, suggesting materials, and organizing events.",
@@ -80,10 +106,11 @@ const Projects = () => {
       featured: false,
       rating: 5,
       date: "2023",
+      githubUrl: "https://github.com/ayoubkefii/camping-web-app",
     },
     {
-      id: 6,
-      title: "SUP4 DEV – FlutterLearn",
+      id: 7,
+      title: "FlutterLearn",
       description:
         "A mobile e-learning app built with Flutter and a PHP/MySQL backend (REST API, JWT auth).",
       image:
@@ -93,9 +120,10 @@ const Projects = () => {
       featured: false,
       rating: 5,
       date: "2024",
+      githubUrl: "https://github.com/ayoubkefii/e_learning-",
     },
     {
-      id: 7,
+      id: 8,
       title: "Recipe Book App",
       description:
         "A full-stack Angular + LoopBack app with recipe listing, filtering, and favorites.",
@@ -106,9 +134,10 @@ const Projects = () => {
       featured: false,
       rating: 4,
       date: "2023",
+      githubUrl: "https://github.com/ayoubkefii/recipe-book-app",
     },
     {
-      id: 8,
+      id: 9,
       title: "Portfolio Website",
       description:
         "My personal portfolio built with React, Tailwind, and Framer Motion.",
@@ -119,9 +148,10 @@ const Projects = () => {
       featured: false,
       rating: 5,
       date: "2024",
+      githubUrl: "https://github.com/ayoubkefii/Ayoub-Kefi-Portfolio",
     },
     {
-      id: 9,
+      id: 10,
       title: "E-Commerce Platform",
       description:
         "A React/Node.js/MySQL app with authentication and product management.",
@@ -132,6 +162,7 @@ const Projects = () => {
       featured: false,
       rating: 5,
       date: "2024",
+      githubUrl: "https://github.com/ayoubkefii/E-Commerce-Platform",
     },
   ];
 
@@ -292,15 +323,21 @@ const Projects = () => {
 
                         {/* Hover Actions */}
                         <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center space-x-4">
-                          <motion.a
-                            href={project.liveUrl}
-                            whileHover={{ scale: 1.1, rotate: 5 }}
-                            whileTap={{ scale: 0.9 }}
-                            className="p-3 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-colors border border-white/20">
-                            <ExternalLink size={20} className="text-white" />
-                          </motion.a>
+                          {project.liveUrl && (
+                            <motion.a
+                              href={project.liveUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              whileHover={{ scale: 1.1, rotate: 5 }}
+                              whileTap={{ scale: 0.9 }}
+                              className="p-3 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-colors border border-white/20">
+                              <ExternalLink size={20} className="text-white" />
+                            </motion.a>
+                          )}
                           <motion.a
                             href={project.githubUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             whileHover={{ scale: 1.1, rotate: -5 }}
                             whileTap={{ scale: 0.9 }}
                             className="p-3 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-colors border border-white/20">
