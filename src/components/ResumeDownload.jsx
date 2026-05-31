@@ -3,10 +3,10 @@ import { Download, FileText, ArrowDown } from "lucide-react";
 
 const ResumeDownload = () => {
   const handleDownload = () => {
-    const url = `${import.meta.env.BASE_URL}resume_ayoub_kefi.pdf`;
+    const url = `${import.meta.env.BASE_URL}Ayoub_Kefi_CV_EN.pdf`;
     const link = document.createElement("a");
     link.href = url;
-    link.download = "resume_ayoub_kefi.pdf";
+    link.download = "Ayoub_Kefi_CV_EN.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
