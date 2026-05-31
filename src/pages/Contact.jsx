@@ -103,12 +103,12 @@ const Contact = () => {
               className="text-center mb-16">
               <motion.h1
                 variants={itemVariants}
-                className="text-4xl md:text-6xl font-bold mb-6 text-white">
+                className="text-4xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white">
                 Get In <span className="text-gradient">Touch</span>
               </motion.h1>
               <motion.p
                 variants={itemVariants}
-                className="text-xl text-gray-400 max-w-3xl mx-auto">
+                className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
                 Let's work together to bring your ideas to life. I'm always open
                 to discussing new projects and opportunities.
               </motion.p>
@@ -124,10 +124,10 @@ const Contact = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
                 className="space-y-8">
-                <h2 className="text-3xl font-bold mb-8 text-white text-center">
+                <h2 className="text-3xl font-bold mb-8 text-gray-900 dark:text-white text-center">
                   Let's Connect
                 </h2>
-                <p className="text-gray-400 mb-8 leading-relaxed text-center">
+                <p className="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed text-center">
                   I'm always interested in hearing about new projects and
                   opportunities. Whether you have a question or just want to say
                   hi, I'll try my best to get back to you!
@@ -151,10 +151,10 @@ const Contact = () => {
                         />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-white">
+                        <h3 className="font-semibold text-gray-900 dark:text-white">
                           {info.title}
                         </h3>
-                        <p className="text-gray-400">
+                        <p className="text-gray-600 dark:text-gray-400">
                           {info.value}
                         </p>
                       </div>
@@ -164,7 +164,7 @@ const Contact = () => {
 
                 {/* Social Links */}
                 <div className="mt-8">
-                  <h3 className="text-xl font-semibold mb-4 text-white text-center">
+                  <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white text-center">
                     Follow Me
                   </h3>
                   <div className="flex justify-center space-x-4">
@@ -180,7 +180,7 @@ const Contact = () => {
                       whileTap={{ scale: 0.9 }}
                       className="p-3 glass-card hover:bg-white/10 transition-all duration-300">
                       <Github
-                        className="text-gray-300"
+                        className="text-gray-700 dark:text-gray-300"
                         size={24}
                       />
                     </motion.a>
@@ -196,7 +196,7 @@ const Contact = () => {
                       whileTap={{ scale: 0.9 }}
                       className="p-3 glass-card hover:bg-white/10 transition-all duration-300">
                       <Linkedin
-                        className="text-gray-300"
+                        className="text-gray-700 dark:text-gray-300"
                         size={24}
                       />
                     </motion.a>
@@ -212,7 +212,7 @@ const Contact = () => {
                       whileTap={{ scale: 0.9 }}
                       className="p-3 glass-card hover:bg-white/10 transition-all duration-300">
                       <MessageCircle
-                        className="text-gray-300"
+                        className="text-gray-700 dark:text-gray-300"
                         size={24}
                       />
                     </motion.a>

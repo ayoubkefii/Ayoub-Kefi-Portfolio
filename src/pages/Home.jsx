@@ -175,7 +175,7 @@ const Home = () => {
             <motion.h1
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
-              className="text-5xl md:text-7xl font-bold mb-6 text-white">
+              className="text-5xl md:text-7xl font-bold mb-6 text-gray-900 dark:text-white">
               <motion.span
                 className="text-gradient inline-block"
                 whileHover={{ textShadow: "0 0 30px rgba(212, 165, 116, 0.8)" }}>
@@ -186,7 +186,7 @@ const Home = () => {
             {/* Enhanced Typewriter Animation with Glow */}
             <motion.div
               variants={itemVariants}
-              className="text-2xl md:text-3xl font-medium mb-8 text-gray-300">
+              className="text-2xl md:text-3xl font-medium mb-8 text-gray-700 dark:text-gray-300">
               <motion.div
                 className="inline-block px-6 py-3 glass-card rounded-2xl">
                 <TypeAnimation
@@ -211,7 +211,7 @@ const Home = () => {
             {/* Description with Fade */}
             <motion.p
               variants={itemVariants}
-              className="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed glass-card p-6 rounded-2xl">
+              className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed glass-card p-6 rounded-2xl">
               I'm a full stack web developer and a computer technician with
               experience in web/mobile development, troubleshooting, hardware,
               and systems. Passionate about building modern apps and solving
@@ -261,7 +261,7 @@ const Home = () => {
                     transition={{ delay: 1 + index * 0.1 }}>
                     {stat.number}
                   </motion.div>
-                  <div className="text-sm text-gray-400">
+                  <div className="text-sm text-gray-600 dark:text-gray-400">
                     {stat.label}
                   </div>
                 </motion.div>
@@ -287,7 +287,7 @@ const Home = () => {
             whileTap={{ scale: 0.9 }}>
             <ChevronDown
               size={28}
-              className="text-gray-400 hover:text-amber-400 transition-colors"
+              className="text-gray-600 dark:text-gray-400 hover:text-amber-400 transition-colors"
             />
           </motion.div>
         </motion.div>
@@ -299,10 +299,10 @@ const Home = () => {
         <div className="container-custom relative z-10">
           <ScrollReveal direction="up" delay={0.2}>
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-white">
                 Tech <span className="text-gradient">Stack</span>
               </h2>
-              <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+              <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
                 Technologies and tools I use to bring ideas to life
               </p>
             </div>
@@ -320,7 +320,7 @@ const Home = () => {
         <div className="container-custom relative z-10">
           <ScrollReveal direction="up" delay={0.2}>
             <div className="text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-white">
                 About <span className="text-gradient">Me</span>
               </h2>
               <p className="text-lg text-gray-400 mb-8 max-w-3xl mx-auto">

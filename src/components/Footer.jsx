@@ -58,7 +58,7 @@ const Footer = () => {
                 aria-label={social.label}>
                 <social.icon
                   size={24}
-                  className="text-gray-300 group-hover:text-amber-400 transition-colors duration-300"
+                  className="text-gray-700 dark:text-gray-300 group-hover:text-amber-400 transition-colors duration-300"
                 />
               </motion.a>
             ))}
@@ -69,7 +69,7 @@ const Footer = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="text-center text-gray-400 text-sm">
+            className="text-center text-gray-600 dark:text-gray-400 text-sm">
             <p className="flex items-center justify-center space-x-1">
               <span>© 2025 Ayoub Kefi. Crafted with</span>
               <motion.div

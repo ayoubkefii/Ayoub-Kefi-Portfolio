@@ -56,12 +56,12 @@ const About = () => {
               className="text-center mb-16">
               <motion.h1
                 variants={itemVariants}
-                className="text-4xl md:text-6xl font-bold mb-6 text-white">
+                className="text-4xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white">
                 About <span className="text-gradient">Me</span>
               </motion.h1>
               <motion.p
                 variants={itemVariants}
-                className="text-xl text-gray-400 max-w-3xl mx-auto">
+                className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
                 Passionate about creating digital experiences that make a
                 difference
               </motion.p>
@@ -91,10 +91,10 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
             <ScrollReveal direction="left" delay={0.3}>
               <div>
-                <h2 className="text-3xl font-bold mb-6 text-white">
+                <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">
                   Who I Am
                 </h2>
-                <p className="text-gray-400 mb-6 leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
                   I'm a full stack web developer and a computer technician with
                   solid technical skills in troubleshooting, hardware, and
                   systems. I have experience building modern web and mobile
@@ -102,7 +102,7 @@ const About = () => {
                   about learning, problem-solving, and delivering high-quality
                   solutions.
                 </p>
-                <p className="text-gray-400 mb-6 leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
                   I believe that design is about more than just making things
                   look pretty – it's about solving problems and creating
                   intuitive, enjoyable experiences for users.
@@ -126,39 +126,39 @@ const About = () => {
                 className="glass-card">
                 <div className="space-y-4">
                   <div className="flex justify-between">
-                    <span className="text-gray-400">
+                    <span className="text-gray-600 dark:text-gray-400">
                       Name:
                     </span>
-                    <span className="font-medium text-white">
+                    <span className="font-medium text-gray-900 dark:text-white">
                       Ayoub Kefi
                     </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-gray-400">
+                    <span className="text-gray-600 dark:text-gray-400">
                       Email:
                     </span>
-                    <span className="font-medium text-white">
+                    <span className="font-medium text-gray-900 dark:text-white">
                       ayoubelkefi11@gmail.com
                     </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-gray-400">
+                    <span className="text-gray-600 dark:text-gray-400">
                       Location:
                     </span>
-                    <span className="font-medium text-white">
+                    <span className="font-medium text-gray-900 dark:text-white">
                       Nabeul, TN
                     </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-gray-400">
+                    <span className="text-gray-600 dark:text-gray-400">
                       Experience:
                     </span>
-                    <span className="font-medium text-white">
+                    <span className="font-medium text-gray-900 dark:text-white">
                       2+ Years
                     </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-gray-400">
+                    <span className="text-gray-600 dark:text-gray-400">
                       Availability:
                     </span>
                     <span className="font-medium text-green-400">
@@ -183,10 +183,10 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
               className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-white">
                 My <span className="text-gradient">Skills</span>
               </h2>
-              <p className="text-gray-400 max-w-2xl mx-auto">
+              <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
                 I've worked with a variety of technologies to create amazing
                 digital experiences
               </p>
@@ -208,7 +208,7 @@ const About = () => {
                       size={24}
                       className="text-amber-400"
                     />
-                    <h3 className="font-semibold text-white">
+                    <h3 className="font-semibold text-gray-900 dark:text-white">
                       {skill.name}
                     </h3>
                   </div>
@@ -221,7 +221,7 @@ const About = () => {
                       transition={{ duration: 1, delay: index * 0.1 }}
                     />
                   </div>
-                  <div className="text-right mt-2 text-sm text-gray-400">
+                  <div className="text-right mt-2 text-sm text-gray-600 dark:text-gray-400">
                     {skill.level}%
                   </div>
                 </motion.div>
@@ -242,10 +242,10 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
               className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-white">
                 Work <span className="text-gradient">Experience</span>
               </h2>
-              <p className="text-gray-400 max-w-2xl mx-auto">
+              <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
                 My professional journey in web development, IT, and technical
                 support
               </p>
@@ -262,18 +262,18 @@ const About = () => {
                     🚀
                   </span>
                   <div>
-                    <h3 className="text-xl font-semibold text-white">
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                       Web Developer – Personal Projects
                     </h3>
                     <div className="text-amber-400 font-medium">
                       Personal Development
                     </div>
-                    <div className="text-gray-400 text-sm">
+                    <div className="text-gray-600 dark:text-gray-400 text-sm">
                       📍 Tunisia (Remote) — January 2024 – January 2025
                     </div>
                   </div>
                 </div>
-                <ul className="list-disc ml-10 text-gray-400 text-sm space-y-1 mt-2 md:mt-0">
+                <ul className="list-disc ml-10 text-gray-600 dark:text-gray-400 text-sm space-y-1 mt-2 md:mt-0">
                   <li>Designed and developed a complete web application</li>
                   <li>
                     Implemented dynamic features with a modern user interface
@@ -294,18 +294,18 @@ const About = () => {
                     🧑‍💻
                   </span>
                   <div>
-                    <h3 className="text-xl font-semibold text-white">
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                       Web Developer (Training & Projects)
                     </h3>
                     <div className="text-amber-400 font-medium">
                       Tunisie Telecom – Web Developer Training
                     </div>
-                    <div className="text-gray-400 text-sm">
+                    <div className="text-gray-600 dark:text-gray-400 text-sm">
                       📍 Tunisia — 2024
                     </div>
                   </div>
                 </div>
-                <ul className="list-disc ml-10 text-gray-400 text-sm space-y-1 mt-2 md:mt-0">
+                <ul className="list-disc ml-10 text-gray-600 dark:text-gray-400 text-sm space-y-1 mt-2 md:mt-0">
                   <li>Developed web pages using HTML, CSS, and JavaScript</li>
                   <li>Built responsive layouts and functional web forms</li>
                   <li>Connected frontend with backend using PHP and MySQL</li>
@@ -325,15 +325,15 @@ const About = () => {
                     💡
                   </span>
                   <div>
-                    <h3 className="text-xl font-semibold text-white">
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                       Academic & Freelance Projects
                     </h3>
-                    <div className="text-gray-400 text-sm">
+                    <div className="text-gray-600 dark:text-gray-400 text-sm">
                       2023–Present
                     </div>
                   </div>
                 </div>
-                <ul className="list-disc ml-10 text-gray-400 text-sm space-y-1 mt-2 md:mt-0">
+                <ul className="list-disc ml-10 text-gray-600 dark:text-gray-400 text-sm space-y-1 mt-2 md:mt-0">
                 <li>
                   Created full-stack applications using Symfony, Angular,
                   Flutter, and LoopBack
@@ -365,7 +365,7 @@ const About = () => {
                     🔧
                   </span>
                   <div>
-                    <h3 className="text-xl font-semibold text-white">
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                       Computer Maintenance Technician
                     </h3>
                     <div className="text-amber-400 font-medium">
@@ -373,12 +373,12 @@ const About = () => {
                       <br />
                       STE HI TECH EXPRESS — 2023
                     </div>
-                    <div className="text-gray-400 text-sm">
+                    <div className="text-gray-600 dark:text-gray-400 text-sm">
                       📍 Tunisia
                     </div>
                   </div>
                 </div>
-                <ul className="list-disc ml-10 text-gray-400 text-sm space-y-1 mt-2 md:mt-0">
+                <ul className="list-disc ml-10 text-gray-600 dark:text-gray-400 text-sm space-y-1 mt-2 md:mt-0">
                 <li>Diagnosed hardware and software faults</li>
                 <li>
                   Repaired and maintained desktops, laptops, and peripherals
@@ -402,18 +402,18 @@ const About = () => {
                     🌐
                   </span>
                   <div>
-                    <h3 className="text-xl font-semibold text-white">
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                       Network Technician (Training)
                     </h3>
                     <div className="text-amber-400 font-medium">
                       Tunisie Telecom — 2022
                     </div>
-                    <div className="text-gray-400 text-sm">
+                    <div className="text-gray-600 dark:text-gray-400 text-sm">
                       📍 Tunisia
                     </div>
                   </div>
                 </div>
-                <ul className="list-disc ml-10 text-gray-400 text-sm space-y-1 mt-2 md:mt-0">
+                <ul className="list-disc ml-10 text-gray-600 dark:text-gray-400 text-sm space-y-1 mt-2 md:mt-0">
                 <li>Managed and maintained local network infrastructures</li>
                 <li>
                   Conducted network performance analysis and troubleshooting
@@ -433,18 +433,18 @@ const About = () => {
                     🖥️
                   </span>
                   <div>
-                    <h3 className="text-xl font-semibold text-white">
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                       Full Stack Web Developer
                     </h3>
                     <div className="text-amber-400 font-medium">
                       Freelance & Academic Projects
                     </div>
-                    <div className="text-gray-400 text-sm">
+                    <div className="text-gray-600 dark:text-gray-400 text-sm">
                       Remote / Tunisia — Jan 2023 – Present
                     </div>
                   </div>
                 </div>
-                <ul className="list-disc ml-10 text-gray-400 text-sm space-y-1 mt-2 md:mt-0">
+                <ul className="list-disc ml-10 text-gray-600 dark:text-gray-400 text-sm space-y-1 mt-2 md:mt-0">
                 <li>
                   Developed full-stack web and mobile apps using React,
                   Angular, Flutter, and Symfony
@@ -486,18 +486,18 @@ const About = () => {
                     🔧
                   </span>
                   <div>
-                    <h3 className="text-xl font-semibold text-white">
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                       Computer Technician
                     </h3>
                     <div className="text-amber-400 font-medium">
                       Self-employed / Local Services
                     </div>
-                    <div className="text-gray-400 text-sm">
+                    <div className="text-gray-600 dark:text-gray-400 text-sm">
                       Tunisia — 2021 – Present
                     </div>
                   </div>
                 </div>
-                <ul className="list-disc ml-10 text-gray-400 text-sm space-y-1 mt-2 md:mt-0">
+                <ul className="list-disc ml-10 text-gray-600 dark:text-gray-400 text-sm space-y-1 mt-2 md:mt-0">
                 <li>
                   Provided on-site and remote tech support for
                   hardware/software issues

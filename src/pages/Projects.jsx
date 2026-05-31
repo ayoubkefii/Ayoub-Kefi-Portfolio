@@ -308,10 +308,10 @@ const Projects = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               className="text-center mb-16">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white">
                 My <span className="text-gradient">Projects</span>
               </h1>
-              <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+              <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
                 Here are some of the projects I've worked on. Each one
                 represents a unique challenge and an opportunity to create
                 something meaningful.
@@ -335,7 +335,7 @@ const Projects = () => {
                   className={`group relative flex items-center space-x-2 px-6 py-3 rounded-xl transition-all duration-300 ${
                     activeFilter === filter.id
                       ? "bg-gradient-to-r from-amber-600 to-yellow-600 text-white shadow-lg shadow-amber-500/25"
-                      : "glass-card text-gray-300 hover:bg-white/10"
+                      : "glass-card text-gray-700 dark:text-gray-300 hover:bg-white/10"
                   }`}>
                   <filter.icon
                     size={20}
@@ -403,7 +403,7 @@ const Projects = () => {
                         )}
 
                         {/* Rating */}
-                        <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm text-white px-2 py-1 rounded-full text-sm flex items-center space-x-1">
+                        <div className="absolute top-4 right-4 bg-black/50 dark:bg-black/50 backdrop-blur-sm text-white px-2 py-1 rounded-full text-sm flex items-center space-x-1">
                           <Star
                             size={14}
                             className="text-yellow-400 fill-current"
@@ -439,16 +439,16 @@ const Projects = () => {
                       {/* Project Content */}
                       <div className="p-6">
                         <div className="flex items-start justify-between mb-3">
-                          <h3 className="text-xl font-semibold text-white group-hover:text-amber-400 transition-colors">
+                          <h3 className="text-xl font-semibold text-gray-900 dark:text-white group-hover:text-amber-400 transition-colors">
                             {project.title}
                           </h3>
-                          <div className="flex items-center space-x-1 text-gray-400 text-sm">
+                          <div className="flex items-center space-x-1 text-gray-600 dark:text-gray-400 text-sm">
                             <Calendar size={14} />
                             <span>{project.date}</span>
                           </div>
                         </div>
 
-                        <p className="text-gray-400 mb-4 leading-relaxed line-clamp-3">
+                        <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed line-clamp-3">
                           {project.description}
                         </p>
 
