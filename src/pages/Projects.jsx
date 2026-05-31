@@ -203,6 +203,7 @@ const Projects = () => {
       rating: 4,
       date: "2025",
       githubUrl: "https://github.com/ayoubkefii/PhonestoreRym",
+      liveUrl: "https://rym-gsm-store.netlify.app/",
     },
     {
       id: 13,
@@ -217,6 +218,7 @@ const Projects = () => {
       rating: 5,
       date: "2025",
       githubUrl: "https://github.com/ayoubkefii/4mediagency-website",
+      liveUrl: "https://4mediagency.netlify.app/",
     },
     {
       id: 14,
@@ -245,6 +247,7 @@ const Projects = () => {
       rating: 4,
       date: "2025",
       githubUrl: "https://github.com/ayoubkefii/ChallengeLounge",
+      liveUrl: "https://challenge-lounge.netlify.app/",
     },
   ];
 
