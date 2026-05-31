@@ -190,6 +190,62 @@ const Projects = () => {
       date: "2024",
       githubUrl: "https://github.com/ayoubkefii/E-Commerce-Platform",
     },
+    {
+      id: 12,
+      title: "PhonestoreRym",
+      description:
+        "A phone store web application for browsing and purchasing mobile devices.",
+      image:
+        "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500&h=300&fit=crop",
+      category: "web",
+      technologies: ["JavaScript", "HTML", "CSS"],
+      featured: false,
+      rating: 4,
+      date: "2025",
+      githubUrl: "https://github.com/ayoubkefii/PhonestoreRym",
+    },
+    {
+      id: 13,
+      title: "4mediagency Website",
+      description:
+        "Premium digital marketing agency website showcasing services and portfolio.",
+      image:
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
+      category: "web",
+      technologies: ["TypeScript", "React", "Tailwind CSS"],
+      featured: true,
+      rating: 5,
+      date: "2025",
+      githubUrl: "https://github.com/ayoubkefii/4mediagency-website",
+    },
+    {
+      id: 14,
+      title: "Task Manager Laravel",
+      description:
+        "A Laravel-based task management application with full CRUD operations.",
+      image:
+        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=300&fit=crop",
+      category: "web",
+      technologies: ["Laravel", "PHP", "MySQL", "Blade"],
+      featured: false,
+      rating: 4,
+      date: "2025",
+      githubUrl: "https://github.com/ayoubkefii/task_manager_laravel",
+    },
+    {
+      id: 15,
+      title: "ChallengeLounge",
+      description:
+        "A challenge-based platform for competitive coding and problem-solving.",
+      image:
+        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500&h=300&fit=crop",
+      category: "web",
+      technologies: ["JavaScript", "HTML", "CSS"],
+      featured: false,
+      rating: 4,
+      date: "2025",
+      githubUrl: "https://github.com/ayoubkefii/ChallengeLounge",
+    },
   ];
 
   const filters = [
