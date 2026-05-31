@@ -18,6 +18,32 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: "AI SaaS Platform",
+      description:
+        "A full-stack AI-powered productivity platform featuring intelligent chat with streaming responses, PDF document analysis with Q&A, Kanban-style task management with drag-and-drop, and real-time analytics dashboard. Built with React, TypeScript, Node.js, and PostgreSQL, integrating Groq AI for natural language processing.",
+      image:
+        "https://images.unsplash.com/photo-1551434678-e076c223a692?w=500&h=300&fit=crop",
+      category: "web",
+      technologies: [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "Prisma ORM",
+        "Groq AI",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Recharts",
+      ],
+      featured: true,
+      rating: 5,
+      date: "2026",
+      githubUrl: "https://github.com/ayoubkefii/ai-saas-platform",
+      liveUrl: "https://frontend-blush-one-30.vercel.app",
+    },
+    {
+      id: 2,
       title: "Ticketing System",
       description:
         "A comprehensive ticketing management system built with Laravel 11, featuring role-based authentication (demandeur, agent, admin), real-time notifications using Laravel WebSockets, and full CRUD operations for tickets and stock management.",
@@ -39,7 +65,7 @@ const Projects = () => {
       githubUrl: "https://github.com/ayoubkefii/ticketing-system",
     },
     {
-      id: 2,
+      id: 3,
       title: "Task Manager",
       description:
         "A comprehensive task management application built with Angular and LoopBack for efficient project organization and team collaboration.",
@@ -53,7 +79,7 @@ const Projects = () => {
       githubUrl: "https://github.com/ayoubkefii/task-manager",
     },
     {
-      id: 3,
+      id: 4,
       title: "Conference Manager",
       description:
         "A Symfony-based conference management system for organizing events, managing attendees, and coordinating schedules.",
@@ -67,7 +93,7 @@ const Projects = () => {
       githubUrl: "https://github.com/ayoubkefii/conference-manager",
     },
     {
-      id: 4,
+      id: 5,
       title: "E-Learning Platform",
       description:
         "A comprehensive e-learning platform built with Symfony framework for course management and student progress tracking.",
@@ -81,7 +107,7 @@ const Projects = () => {
       githubUrl: "https://github.com/ayoubkefii/e-learning-platform",
     },
     {
-      id: 5,
+      id: 6,
       title: "LearnUp",
       description:
         "A PHP native e-learning application with user authentication, course management, and interactive learning features.",
@@ -95,7 +121,7 @@ const Projects = () => {
       githubUrl: "https://github.com/ayoubkefii/learnup",
     },
     {
-      id: 6,
+      id: 7,
       title: "Camping Web App",
       description:
         "A Symfony-based web app for renting camping gear, suggesting materials, and organizing events.",
@@ -109,7 +135,7 @@ const Projects = () => {
       githubUrl: "https://github.com/ayoubkefii/camping-web-app",
     },
     {
-      id: 7,
+      id: 8,
       title: "FlutterLearn",
       description:
         "A mobile e-learning app built with Flutter and a PHP/MySQL backend (REST API, JWT auth).",
@@ -123,7 +149,7 @@ const Projects = () => {
       githubUrl: "https://github.com/ayoubkefii/e_learning-",
     },
     {
-      id: 8,
+      id: 9,
       title: "Recipe Book App",
       description:
         "A full-stack Angular + LoopBack app with recipe listing, filtering, and favorites.",
@@ -137,7 +163,7 @@ const Projects = () => {
       githubUrl: "https://github.com/ayoubkefii/recipe-book-app",
     },
     {
-      id: 9,
+      id: 10,
       title: "Portfolio Website",
       description:
         "My personal portfolio built with React, Tailwind, and Framer Motion.",
@@ -151,7 +177,7 @@ const Projects = () => {
       githubUrl: "https://github.com/ayoubkefii/Ayoub-Kefi-Portfolio",
     },
     {
-      id: 10,
+      id: 11,
       title: "E-Commerce Platform",
       description:
         "A React/Node.js/MySQL app with authentication and product management.",
