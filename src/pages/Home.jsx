@@ -95,35 +95,35 @@ const Home = () => {
           style={{ y: useTransform(scrollYProgress, [0, 1], ["0%", "120%"]) }}
           variants={floatingVariants}
           animate="animate"
-          className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-indigo-500/40 to-purple-500/40 rounded-full blur-3xl"
+          className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-amber-500/30 to-yellow-500/30 rounded-full blur-3xl"
         />
         <motion.div
           style={{ y: useTransform(scrollYProgress, [0, 1], ["0%", "-120%"]) }}
           variants={floatingVariants}
           animate="animate"
           transition={{ duration: 8, delay: 1 }}
-          className="absolute bottom-20 right-10 w-40 h-40 bg-gradient-to-br from-purple-500/40 to-pink-500/40 rounded-full blur-3xl"
+          className="absolute bottom-20 right-10 w-40 h-40 bg-gradient-to-br from-yellow-500/30 to-orange-500/30 rounded-full blur-3xl"
         />
         <motion.div
           style={{ y: useTransform(scrollYProgress, [0, 1], ["0%", "180%"]) }}
           variants={floatingVariants}
           animate="animate"
           transition={{ duration: 7, delay: 2 }}
-          className="absolute top-1/2 left-1/4 w-24 h-24 bg-gradient-to-br from-cyan-500/40 to-indigo-500/40 rounded-full blur-3xl"
+          className="absolute top-1/2 left-1/4 w-24 h-24 bg-gradient-to-br from-amber-400/30 to-yellow-400/30 rounded-full blur-3xl"
         />
         <motion.div
           style={{ y: useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]) }}
           variants={floatingVariants}
           animate="animate"
           transition={{ duration: 9, delay: 0.5 }}
-          className="absolute top-1/3 right-1/4 w-20 h-20 bg-gradient-to-br from-pink-500/40 to-purple-500/40 rounded-full blur-3xl"
+          className="absolute top-1/3 right-1/4 w-20 h-20 bg-gradient-to-br from-orange-500/30 to-amber-500/30 rounded-full blur-3xl"
         />
 
         {/* Animated Grid Pattern */}
         <motion.div
           style={{ y: useTransform(scrollYProgress, [0, 1], ["0%", "30%"]) }}
           className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(99,102,241,0.3)_1px,transparent_0)] bg-[length:50px_50px]"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(212,165,116,0.3)_1px,transparent_0)] bg-[length:50px_50px]"></div>
         </motion.div>
 
         {/* Content with Parallax */}
@@ -142,9 +142,9 @@ const Home = () => {
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 3, repeat: Infinity, ease: "linear" }}>
-                <Sparkles className="text-indigo-400" size={20} />
+                <Sparkles className="text-amber-400" size={20} />
               </motion.div>
-              <p className="text-indigo-400 font-medium text-lg">
+              <p className="text-amber-400 font-medium text-lg">
                 Hello, I'm
               </p>
             </motion.div>
@@ -160,13 +160,13 @@ const Home = () => {
                 whileHover={{ rotateY: 10, rotateX: 10 }}
                 style={{ transformStyle: "preserve-3d" }}>
                 <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full blur-xl opacity-50 animate-pulse-glow"
+                  className="absolute inset-0 bg-gradient-to-r from-amber-500 to-yellow-500 rounded-full blur-xl opacity-50 animate-pulse-glow"
                 />
                 <motion.img
                   src={`${import.meta.env.BASE_URL}ayoub.png`}
                   alt="Ayoub Kefi"
-                  className="relative w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-indigo-500 shadow-2xl object-cover bg-white/10 backdrop-blur-sm"
-                  whileHover={{ boxShadow: "0 0 40px rgba(99, 102, 241, 0.6)" }}
+                  className="relative w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-amber-500 shadow-2xl object-cover bg-white/10 backdrop-blur-sm"
+                  whileHover={{ boxShadow: "0 0 40px rgba(212, 165, 116, 0.6)" }}
                 />
               </motion.div>
             </motion.div>
@@ -178,7 +178,7 @@ const Home = () => {
               className="text-5xl md:text-7xl font-bold mb-6 text-white">
               <motion.span
                 className="text-gradient inline-block"
-                whileHover={{ textShadow: "0 0 30px rgba(99, 102, 241, 0.8)" }}>
+                whileHover={{ textShadow: "0 0 30px rgba(212, 165, 116, 0.8)" }}>
                 Ayoub Kefi
               </motion.span>
             </motion.h1>
@@ -287,7 +287,7 @@ const Home = () => {
             whileTap={{ scale: 0.9 }}>
             <ChevronDown
               size={28}
-              className="text-gray-400 hover:text-indigo-400 transition-colors"
+              className="text-gray-400 hover:text-amber-400 transition-colors"
             />
           </motion.div>
         </motion.div>

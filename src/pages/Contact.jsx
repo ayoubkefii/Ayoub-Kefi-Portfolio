@@ -160,10 +160,10 @@ const Contact = () => {
                       transition={{ delay: index * 0.1 }}
                       whileHover={{ scale: 1.02, x: 5 }}
                       className="flex items-center space-x-4 p-4 glass-card hover:bg-white/10 transition-all duration-300">
-                      <div className="p-3 bg-indigo-600/20 rounded-full">
+                      <div className="p-3 bg-amber-600/20 rounded-full">
                         <info.icon
                           size={24}
-                          className="text-indigo-400"
+                          className="text-amber-400"
                         />
                       </div>
                       <div>
@@ -249,7 +249,7 @@ const Contact = () => {
                         value={formData.name}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 bg-white/5 border border-gray-700 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-white placeholder-gray-500"
+                        className="w-full px-4 py-3 bg-white/5 border border-gray-700 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent text-white placeholder-gray-500"
                         placeholder="Your name"
                       />
                     </motion.div>
@@ -268,7 +268,7 @@ const Contact = () => {
                         value={formData.email}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 bg-white/5 border border-gray-700 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-white placeholder-gray-500"
+                        className="w-full px-4 py-3 bg-white/5 border border-gray-700 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent text-white placeholder-gray-500"
                         placeholder="your@email.com"
                       />
                     </motion.div>
@@ -288,7 +288,7 @@ const Contact = () => {
                       value={formData.subject}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-white/5 border border-gray-700 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-white placeholder-gray-500"
+                      className="w-full px-4 py-3 bg-white/5 border border-gray-700 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent text-white placeholder-gray-500"
                       placeholder="What's this about?"
                     />
                   </motion.div>

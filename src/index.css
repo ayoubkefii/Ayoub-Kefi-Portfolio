@@ -11,8 +11,8 @@
 
   body {
     font-family: "Inter", system-ui, sans-serif;
-    background-color: #0a0a0f;
-    color: #f1f5f9;
+    background-color: #0f1419;
+    color: #e2e8f0;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -32,16 +32,16 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #1e293b;
+  background: #1a1f2e;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #6366f1, #8b5cf6);
+  background: linear-gradient(180deg, #d4a574, #c9a66b);
   border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #4f46e5, #7c3aed);
+  background: linear-gradient(180deg, #c9a66b, #b8956f);
 }
 
 /* Custom Animations */
@@ -51,8 +51,8 @@
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px rgba(99, 102, 241, 0.3); }
-  50% { box-shadow: 0 0 40px rgba(99, 102, 241, 0.6); }
+  0%, 100% { box-shadow: 0 0 20px rgba(212, 165, 116, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(212, 165, 116, 0.6); }
 }
 
 @keyframes gradient-shift {
@@ -85,7 +85,7 @@
   position: absolute;
   width: 4px;
   height: 4px;
-  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  background: linear-gradient(135deg, #d4a574, #c9a66b);
   border-radius: 50%;
   animation: particle-float 15s linear infinite;
   pointer-events: none;
@@ -93,11 +93,11 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 bg-[length:200%_auto] animate-gradient text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-indigo-500/50 focus:outline-none focus:ring-4 focus:ring-indigo-500/30;
+    @apply bg-gradient-to-r from-amber-600 via-yellow-600 to-amber-600 bg-[length:200%_auto] animate-gradient text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/50 focus:outline-none focus:ring-4 focus:ring-amber-500/30;
   }
 
   .btn-secondary {
-    @apply bg-transparent border-2 border-indigo-600 text-indigo-400 hover:bg-indigo-600 hover:text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-indigo-500/30;
+    @apply bg-transparent border-2 border-amber-600 text-amber-400 hover:bg-amber-600 hover:text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-amber-500/30;
   }
 
   .section-padding {
@@ -114,16 +114,16 @@
   }
 
   .glass-card {
-    @apply glass-effect rounded-3xl p-8 transition-all duration-500 hover:shadow-indigo-500/20 hover:scale-[1.02];
+    @apply glass-effect rounded-3xl p-8 transition-all duration-500 hover:shadow-amber-500/20 hover:scale-[1.02];
   }
 
   /* Gradient Text */
   .text-gradient {
-    @apply bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-[length:200%_auto] animate-gradient bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-amber-500 via-yellow-500 to-orange-500 bg-[length:200%_auto] animate-gradient bg-clip-text text-transparent;
   }
 
   .text-gradient-blue {
-    @apply bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 bg-[length:200%_auto] animate-gradient bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-400 bg-[length:200%_auto] animate-gradient bg-clip-text text-transparent;
   }
 
   /* 3D Card Effect */
@@ -137,15 +137,15 @@
 @layer utilities {
   /* Neon Glow Effects */
   .neon-glow {
-    box-shadow: 0 0 10px rgba(99, 102, 241, 0.5),
-                0 0 20px rgba(99, 102, 241, 0.3),
-                0 0 30px rgba(99, 102, 241, 0.2);
+    box-shadow: 0 0 10px rgba(212, 165, 116, 0.5),
+                0 0 20px rgba(212, 165, 116, 0.3),
+                0 0 30px rgba(212, 165, 116, 0.2);
   }
 
   .neon-glow-purple {
-    box-shadow: 0 0 10px rgba(139, 92, 246, 0.5),
-                0 0 20px rgba(139, 92, 246, 0.3),
-                0 0 30px rgba(139, 92, 246, 0.2);
+    box-shadow: 0 0 10px rgba(201, 166, 107, 0.5),
+                0 0 20px rgba(201, 166, 107, 0.3),
+                0 0 30px rgba(201, 166, 107, 0.2);
   }
 
   /* Dark mode text colors */
@@ -159,17 +159,17 @@
 
   /* Animated Background */
   .bg-animated {
-    @apply bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 bg-[length:400%_400%] animate-gradient;
+    @apply bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 bg-[length:400%_400%] animate-gradient;
   }
 
   /* Mesh Gradient */
   .mesh-gradient {
-    background: 
-      radial-gradient(at 40% 20%, hsla(228, 84%, 66%, 0.3) 0px, transparent 50%),
-      radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 0.3) 0px, transparent 50%),
-      radial-gradient(at 0% 50%, hsla(355, 85%, 63%, 0.2) 0px, transparent 50%),
-      radial-gradient(at 80% 50%, hsla(340, 75%, 55%, 0.2) 0px, transparent 50%),
-      radial-gradient(at 0% 100%, hsla(269, 85%, 65%, 0.2) 0px, transparent 50%),
-      radial-gradient(at 80% 100%, hsla(240, 74%, 58%, 0.2) 0px, transparent 50%);
+    background:
+      radial-gradient(at 40% 20%, hsla(38, 70%, 60%, 0.15) 0px, transparent 50%),
+      radial-gradient(at 80% 0%, hsla(45, 70%, 55%, 0.12) 0px, transparent 50%),
+      radial-gradient(at 0% 50%, hsla(35, 70%, 50%, 0.1) 0px, transparent 50%),
+      radial-gradient(at 80% 50%, hsla(40, 65%, 45%, 0.1) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, hsla(38, 60%, 40%, 0.08) 0px, transparent 50%),
+      radial-gradient(at 80% 100%, hsla(42, 55%, 35%, 0.08) 0px, transparent 50%);
   }
 }

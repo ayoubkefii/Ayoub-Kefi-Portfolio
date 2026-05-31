@@ -334,7 +334,7 @@ const Projects = () => {
                   onClick={() => setActiveFilter(filter.id)}
                   className={`group relative flex items-center space-x-2 px-6 py-3 rounded-xl transition-all duration-300 ${
                     activeFilter === filter.id
-                      ? "bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-lg shadow-indigo-500/25"
+                      ? "bg-gradient-to-r from-amber-600 to-yellow-600 text-white shadow-lg shadow-amber-500/25"
                       : "glass-card text-gray-300 hover:bg-white/10"
                   }`}>
                   <filter.icon
@@ -379,7 +379,7 @@ const Projects = () => {
                     <motion.div
                       whileHover={{ rotateX: 5, rotateY: 5 }}
                       style={{ transformStyle: "preserve-3d" }}
-                      className="glass-card rounded-2xl overflow-hidden transform transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-indigo-500/30">
+                      className="glass-card rounded-2xl overflow-hidden transform transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-amber-500/30">
                       {/* Project Image with Enhanced Hover */}
                       <div className="relative overflow-hidden">
                         <img
@@ -420,7 +420,7 @@ const Projects = () => {
                               rel="noopener noreferrer"
                               whileHover={{ scale: 1.1, rotate: 5 }}
                               whileTap={{ scale: 0.9 }}
-                              className="p-2 bg-gradient-to-r from-indigo-600 to-purple-600 backdrop-blur-sm rounded-full hover:from-indigo-500 hover:to-purple-500 transition-all border border-white/20 shadow-lg">
+                              className="p-2 bg-gradient-to-r from-amber-600 to-yellow-600 backdrop-blur-sm rounded-full hover:from-amber-500 hover:to-yellow-500 transition-all border border-white/20 shadow-lg">
                               <ExternalLink size={16} className="text-white" />
                             </motion.a>
                           )}
@@ -430,7 +430,7 @@ const Projects = () => {
                             rel="noopener noreferrer"
                             whileHover={{ scale: 1.1, rotate: -5 }}
                             whileTap={{ scale: 0.9 }}
-                            className="p-2 bg-gradient-to-r from-indigo-600 to-purple-600 backdrop-blur-sm rounded-full hover:from-indigo-500 hover:to-purple-500 transition-all border border-white/20 shadow-lg">
+                            className="p-2 bg-gradient-to-r from-amber-600 to-yellow-600 backdrop-blur-sm rounded-full hover:from-amber-500 hover:to-yellow-500 transition-all border border-white/20 shadow-lg">
                             <Github size={16} className="text-white" />
                           </motion.a>
                         </div>
@@ -439,7 +439,7 @@ const Projects = () => {
                       {/* Project Content */}
                       <div className="p-6">
                         <div className="flex items-start justify-between mb-3">
-                          <h3 className="text-xl font-semibold text-white group-hover:text-indigo-400 transition-colors">
+                          <h3 className="text-xl font-semibold text-white group-hover:text-amber-400 transition-colors">
                             {project.title}
                           </h3>
                           <div className="flex items-center space-x-1 text-gray-400 text-sm">
@@ -457,7 +457,7 @@ const Projects = () => {
                           {project.technologies.map((tech) => (
                             <span
                               key={tech}
-                              className="px-3 py-1 bg-indigo-600/20 text-indigo-400 rounded-full text-sm font-medium border border-indigo-600/30 hover:bg-indigo-600/30 transition-colors">
+                              className="px-3 py-1 bg-amber-600/20 text-amber-400 rounded-full text-sm font-medium border border-amber-600/30 hover:bg-amber-600/30 transition-colors">
                               {tech}
                             </span>
                           ))}

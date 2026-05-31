@@ -77,12 +77,12 @@ const About = () => {
             className="flex justify-center mb-6">
             <div className="relative">
               <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full blur-xl opacity-50 animate-pulse-glow"
+                className="absolute inset-0 bg-gradient-to-r from-amber-500 to-yellow-500 rounded-full blur-xl opacity-50 animate-pulse-glow"
               />
               <img
                 src={`${import.meta.env.BASE_URL}ayoub.png`}
                 alt="Ayoub Kefi"
-                className="relative w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-indigo-500 shadow-2xl object-cover bg-white/10 backdrop-blur-sm"
+                className="relative w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-amber-500 shadow-2xl object-cover bg-white/10 backdrop-blur-sm"
               />
             </div>
           </motion.div>
@@ -108,11 +108,11 @@ const About = () => {
                   intuitive, enjoyable experiences for users.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <div className="flex items-center space-x-2 text-indigo-400">
+                  <div className="flex items-center space-x-2 text-amber-400">
                     <Globe size={20} />
                     <span>Remote Work</span>
                   </div>
-                  <div className="flex items-center space-x-2 text-indigo-400">
+                  <div className="flex items-center space-x-2 text-amber-400">
                     <Zap size={20} />
                     <span>Fast Delivery</span>
                   </div>
@@ -206,7 +206,7 @@ const About = () => {
                   <div className="flex items-center space-x-3 mb-4">
                     <skill.icon
                       size={24}
-                      className="text-indigo-400"
+                      className="text-amber-400"
                     />
                     <h3 className="font-semibold text-white">
                       {skill.name}
@@ -214,7 +214,7 @@ const About = () => {
                   </div>
                   <div className="w-full bg-gray-700 rounded-full h-2">
                     <motion.div
-                      className="bg-gradient-to-r from-indigo-500 to-purple-500 h-2 rounded-full"
+                      className="bg-gradient-to-r from-amber-500 to-yellow-500 h-2 rounded-full"
                       initial={{ width: 0 }}
                       whileInView={{ width: `${skill.level}%` }}
                       viewport={{ once: true }}
@@ -265,7 +265,7 @@ const About = () => {
                     <h3 className="text-xl font-semibold text-white">
                       Web Developer – Personal Projects
                     </h3>
-                    <div className="text-indigo-400 font-medium">
+                    <div className="text-amber-400 font-medium">
                       Personal Development
                     </div>
                     <div className="text-gray-400 text-sm">
@@ -290,14 +290,14 @@ const About = () => {
             <ScrollReveal direction="right" delay={0.2}>
               <motion.div className="glass-card flex flex-col md:flex-row md:items-center md:justify-between">
                 <div className="flex items-center mb-4 md:mb-0">
-                  <span className="text-indigo-400 text-3xl mr-4">
+                  <span className="text-amber-400 text-3xl mr-4">
                     🧑‍💻
                   </span>
                   <div>
                     <h3 className="text-xl font-semibold text-white">
                       Web Developer (Training & Projects)
                     </h3>
-                    <div className="text-indigo-400 font-medium">
+                    <div className="text-amber-400 font-medium">
                       Tunisie Telecom – Web Developer Training
                     </div>
                     <div className="text-gray-400 text-sm">
@@ -368,7 +368,7 @@ const About = () => {
                     <h3 className="text-xl font-semibold text-white">
                       Computer Maintenance Technician
                     </h3>
-                    <div className="text-indigo-400 font-medium">
+                    <div className="text-amber-400 font-medium">
                       STE SEF INFO — 2022–2023
                       <br />
                       STE HI TECH EXPRESS — 2023
@@ -398,14 +398,14 @@ const About = () => {
             <ScrollReveal direction="left" delay={0.4}>
               <motion.div className="glass-card flex flex-col md:flex-row md:items-center md:justify-between">
                 <div className="flex items-center mb-4 md:mb-0">
-                  <span className="text-indigo-400 text-3xl mr-4">
+                  <span className="text-amber-400 text-3xl mr-4">
                     🌐
                   </span>
                   <div>
                     <h3 className="text-xl font-semibold text-white">
                       Network Technician (Training)
                     </h3>
-                    <div className="text-indigo-400 font-medium">
+                    <div className="text-amber-400 font-medium">
                       Tunisie Telecom — 2022
                     </div>
                     <div className="text-gray-400 text-sm">
@@ -429,14 +429,14 @@ const About = () => {
             <ScrollReveal direction="right" delay={0.5}>
               <motion.div className="glass-card flex flex-col md:flex-row md:items-center md:justify-between">
                 <div className="flex items-center mb-4 md:mb-0">
-                  <span className="text-indigo-400 text-3xl mr-4">
+                  <span className="text-amber-400 text-3xl mr-4">
                     🖥️
                   </span>
                   <div>
                     <h3 className="text-xl font-semibold text-white">
                       Full Stack Web Developer
                     </h3>
-                    <div className="text-indigo-400 font-medium">
+                    <div className="text-amber-400 font-medium">
                       Freelance & Academic Projects
                     </div>
                     <div className="text-gray-400 text-sm">
@@ -489,7 +489,7 @@ const About = () => {
                     <h3 className="text-xl font-semibold text-white">
                       Computer Technician
                     </h3>
-                    <div className="text-indigo-400 font-medium">
+                    <div className="text-amber-400 font-medium">
                       Self-employed / Local Services
                     </div>
                     <div className="text-gray-400 text-sm">

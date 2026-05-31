@@ -48,7 +48,7 @@ const Navbar = () => {
       animate="visible"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "backdrop-blur-xl bg-black/20 border-b border-white/10 shadow-2xl shadow-indigo-500/10"
+          ? "backdrop-blur-xl bg-black/20 border-b border-white/10 shadow-2xl shadow-amber-500/10"
           : "bg-transparent"
       }`}>
       <div className="container-custom px-4">
@@ -71,14 +71,14 @@ const Navbar = () => {
                   to={item.path}
                   className={`relative px-3 py-2 text-sm font-medium transition-all duration-300 ${
                     location.pathname === item.path
-                      ? "text-indigo-400"
+                      ? "text-amber-400"
                       : "text-gray-300 hover:text-white"
                   }`}>
                   {item.label}
                   {location.pathname === item.path && (
                     <motion.div
                       layoutId="activeTab"
-                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-indigo-400 to-purple-400"
+                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-amber-400 to-yellow-400"
                       initial={false}
                       transition={{
                         type: "spring",
@@ -128,7 +128,7 @@ const Navbar = () => {
                       onClick={() => setIsOpen(false)}
                       className={`block px-4 py-2 text-sm font-medium transition-all duration-300 ${
                         location.pathname === item.path
-                          ? "text-indigo-400 bg-white/10"
+                          ? "text-amber-400 bg-white/10"
                           : "text-gray-300 hover:text-white hover:bg-white/10"
                       }`}>
                       {item.label}
