@@ -21,10 +21,10 @@ const ResumeDownload = () => {
         transition: { duration: 0.2 },
       }}
       whileTap={{ scale: 0.95 }}
-      className="group relative inline-flex items-center space-x-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl hover:shadow-blue-500/25 transition-all duration-300 overflow-hidden">
+      className="group relative inline-flex items-center space-x-3 px-8 py-4 bg-gradient-to-r from-amber-600 to-yellow-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl hover:shadow-amber-500/25 transition-all duration-300 overflow-hidden">
       {/* Background animation */}
       <motion.div
-        className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-blue-600"
+        className="absolute inset-0 bg-gradient-to-r from-yellow-600 to-amber-600"
         initial={{ x: "-100%" }}
         whileHover={{ x: "0%" }}
         transition={{ duration: 0.3 }}

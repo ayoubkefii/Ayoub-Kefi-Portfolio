@@ -10,8 +10,8 @@ const Layout = ({ children }) => {
     <div
       className={`min-h-screen transition-colors duration-500 ${
         isDark
-          ? "bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900"
-          : "bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100"
+          ? "bg-gradient-to-br from-black via-gray-900 to-black"
+          : "bg-gradient-to-br from-gray-50 via-amber-50 to-gray-100"
       }`}>
       <Navbar />
       <main className="pt-16">{children}</main>

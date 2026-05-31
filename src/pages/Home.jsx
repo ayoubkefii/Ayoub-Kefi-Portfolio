@@ -203,7 +203,7 @@ const Home = () => {
                   wrapper="span"
                   speed={50}
                   repeat={Infinity}
-                  className="text-gradient-blue"
+                  className="text-gradient"
                 />
               </motion.div>
             </motion.div>

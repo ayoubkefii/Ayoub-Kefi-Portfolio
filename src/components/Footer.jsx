@@ -58,7 +58,7 @@ const Footer = () => {
                 aria-label={social.label}>
                 <social.icon
                   size={24}
-                  className="text-gray-300 group-hover:text-blue-400 transition-colors duration-300"
+                  className="text-gray-300 group-hover:text-amber-400 transition-colors duration-300"
                 />
               </motion.a>
             ))}

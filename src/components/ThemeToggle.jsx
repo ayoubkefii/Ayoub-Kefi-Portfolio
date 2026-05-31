@@ -37,7 +37,7 @@ const ThemeToggle = () => {
           }}
           transition={{ duration: 0.3 }}
           className="absolute inset-0">
-          <Moon size={24} className="text-blue-400" />
+          <Moon size={24} className="text-amber-400" />
         </motion.div>
       </motion.div>
     </motion.button>

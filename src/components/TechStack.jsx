@@ -18,9 +18,9 @@ const TechStack = () => {
     {
       name: "React",
       icon: Code,
-      color: "text-cyan-400",
-      bgColor: "bg-cyan-400/10",
-      borderColor: "border-cyan-400/20",
+      color: "text-amber-400",
+      bgColor: "bg-amber-400/10",
+      borderColor: "border-amber-400/20",
       description: "Frontend Development",
     },
     {
@@ -42,9 +42,9 @@ const TechStack = () => {
     {
       name: "React Native",
       icon: MobileIcon,
-      color: "text-blue-400",
-      bgColor: "bg-blue-400/10",
-      borderColor: "border-blue-400/20",
+      color: "text-amber-400",
+      bgColor: "bg-amber-400/10",
+      borderColor: "border-amber-400/20",
       description: "Mobile Development",
     },
     {

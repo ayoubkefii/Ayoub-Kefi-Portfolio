@@ -1,31 +1,15 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import {
   Mail,
   Phone,
   MapPin,
-  Send,
-  CheckCircle,
-  AlertCircle,
   Github,
   Linkedin,
+  MessageCircle,
 } from "lucide-react";
 import ScrollReveal from "../components/ScrollReveal";
-import emailjs from "emailjs-com";
-
-const SERVICE_ID = "service_6f9bcen";
-const TEMPLATE_ID = "template_bjahbd6";
-const PUBLIC_KEY = "j6QAFrC6Z1G2je9DV";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null);
 
   const contactInfo = [
     {
@@ -131,19 +115,19 @@ const Contact = () => {
             </motion.div>
           </ScrollReveal>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="max-w-2xl mx-auto">
             {/* Contact Information */}
-            <ScrollReveal direction="left" delay={0.3}>
+            <ScrollReveal direction="up" delay={0.3}>
               <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: -50 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
                 className="space-y-8">
-                <h2 className="text-3xl font-bold mb-8 text-white">
+                <h2 className="text-3xl font-bold mb-8 text-white text-center">
                   Let's Connect
                 </h2>
-                <p className="text-gray-400 mb-8 leading-relaxed">
+                <p className="text-gray-400 mb-8 leading-relaxed text-center">
                   I'm always interested in hearing about new projects and
                   opportunities. Whether you have a question or just want to say
                   hi, I'll try my best to get back to you!
@@ -180,10 +164,10 @@ const Contact = () => {
 
                 {/* Social Links */}
                 <div className="mt-8">
-                  <h3 className="text-xl font-semibold mb-4 text-white">
+                  <h3 className="text-xl font-semibold mb-4 text-white text-center">
                     Follow Me
                   </h3>
-                  <div className="flex space-x-4">
+                  <div className="flex justify-center space-x-4">
                     <motion.a
                       href="https://github.com/ayoubkefii"
                       target="_blank"
@@ -216,153 +200,24 @@ const Contact = () => {
                         size={24}
                       />
                     </motion.a>
+                    <motion.a
+                      href="https://wa.me/216XXXXXXXXXX"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      initial={{ opacity: 0, scale: 0 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.2 }}
+                      whileHover={{ scale: 1.1, rotate: 5 }}
+                      whileTap={{ scale: 0.9 }}
+                      className="p-3 glass-card hover:bg-white/10 transition-all duration-300">
+                      <MessageCircle
+                        className="text-gray-300"
+                        size={24}
+                      />
+                    </motion.a>
                   </div>
                 </div>
-              </motion.div>
-            </ScrollReveal>
-
-            {/* Contact Form */}
-            <ScrollReveal direction="right" delay={0.4}>
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-                className="glass-card rounded-2xl p-8">
-                <h2 className="text-2xl font-bold mb-6 text-white">
-                  Send Message
-                </h2>
-
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <motion.div
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: 0.1 }}>
-                      <label className="block text-sm font-medium text-gray-300 mb-2">
-                        Name
-                      </label>
-                      <input
-                        type="text"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        required
-                        className="w-full px-4 py-3 bg-white/5 border border-gray-700 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent text-white placeholder-gray-500"
-                        placeholder="Your name"
-                      />
-                    </motion.div>
-
-                    <motion.div
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: 0.2 }}>
-                      <label className="block text-sm font-medium text-gray-300 mb-2">
-                        Email
-                      </label>
-                      <input
-                        type="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        required
-                        className="w-full px-4 py-3 bg-white/5 border border-gray-700 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent text-white placeholder-gray-500"
-                        placeholder="your@email.com"
-                      />
-                    </motion.div>
-                  </div>
-
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.3 }}>
-                    <label className="block text-sm font-medium text-gray-300 mb-2">
-                      Subject
-                    </label>
-                    <input
-                      type="text"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 bg-white/5 border border-gray-700 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent text-white placeholder-gray-500"
-                      placeholder="What's this about?"
-                    />
-                  </motion.div>
-
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.4 }}>
-                    <label className="block text-sm font-medium text-gray-300 mb-2">
-                      Message
-                    </label>
-                    <textarea
-                      name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      required
-                      rows={6}
-                      className="w-full px-4 py-3 bg-white/5 border border-gray-700 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-white placeholder-gray-500 resize-none"
-                      placeholder="Tell me about your project..."
-                    />
-                  </motion.div>
-
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.5 }}>
-                    <motion.button
-                      type="submit"
-                      disabled={isSubmitting}
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                      className="w-full btn-primary flex items-center justify-center space-x-2">
-                      {isSubmitting ? (
-                        <>
-                          <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
-                          <span>Sending...</span>
-                        </>
-                      ) : (
-                        <>
-                          <Send size={20} />
-                          <span>Send Message</span>
-                        </>
-                      )}
-                    </motion.button>
-                  </motion.div>
-
-                  {/* Status Message */}
-                  <AnimatePresence>
-                    {submitStatus && (
-                      <motion.div
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -10 }}
-                        className={`flex items-center space-x-2 p-4 rounded-lg ${
-                          submitStatus === "success"
-                            ? "bg-green-900/30 text-green-400"
-                            : "bg-red-900/30 text-red-400"
-                        }`}>
-                        {submitStatus === "success" ? (
-                          <CheckCircle size={20} />
-                        ) : (
-                          <AlertCircle size={20} />
-                        )}
-                        <span>
-                          {submitStatus === "success"
-                            ? "Message sent successfully! I'll get back to you soon."
-                            : "Something went wrong. Please try again."}
-                        </span>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </form>
               </motion.div>
             </ScrollReveal>
           </div>

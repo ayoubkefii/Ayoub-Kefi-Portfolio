@@ -11,7 +11,7 @@
 
   body {
     font-family: "Inter", system-ui, sans-serif;
-    background-color: #0f1419;
+    background-color: #000000;
     color: #e2e8f0;
   }
 
@@ -159,7 +159,7 @@
 
   /* Animated Background */
   .bg-animated {
-    @apply bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 bg-[length:400%_400%] animate-gradient;
+    @apply bg-gradient-to-br from-black via-gray-900 to-black bg-[length:400%_400%] animate-gradient;
   }
 
   /* Mesh Gradient */
