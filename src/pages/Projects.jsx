@@ -44,6 +44,51 @@ const Projects = () => {
     },
     {
       id: 2,
+      title: "4mediagency Website",
+      description:
+        "Premium digital marketing agency website showcasing services and portfolio.",
+      image:
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
+      category: "web",
+      technologies: ["TypeScript", "React", "Tailwind CSS"],
+      featured: true,
+      rating: 5,
+      date: "2025",
+      githubUrl: "https://github.com/ayoubkefii/4mediagency-website",
+      liveUrl: "https://4mediagency.netlify.app/",
+    },
+    {
+      id: 3,
+      title: "PhonestoreRym",
+      description:
+        "A phone store web application for browsing and purchasing mobile devices.",
+      image:
+        "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500&h=300&fit=crop",
+      category: "web",
+      technologies: ["JavaScript", "HTML", "CSS"],
+      featured: false,
+      rating: 4,
+      date: "2025",
+      githubUrl: "https://github.com/ayoubkefii/PhonestoreRym",
+      liveUrl: "https://rym-gsm-store.netlify.app/",
+    },
+    {
+      id: 4,
+      title: "ChallengeLounge",
+      description:
+        "A challenge-based platform for competitive coding and problem-solving.",
+      image:
+        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500&h=300&fit=crop",
+      category: "web",
+      technologies: ["JavaScript", "HTML", "CSS"],
+      featured: false,
+      rating: 4,
+      date: "2025",
+      githubUrl: "https://github.com/ayoubkefii/ChallengeLounge",
+      liveUrl: "https://challenge-lounge.netlify.app/",
+    },
+    {
+      id: 5,
       title: "Ticketing System",
       description:
         "A comprehensive ticketing management system built with Laravel 11, featuring role-based authentication (demandeur, agent, admin), real-time notifications using Laravel WebSockets, and full CRUD operations for tickets and stock management.",
@@ -65,7 +110,7 @@ const Projects = () => {
       githubUrl: "https://github.com/ayoubkefii/ticketing-system",
     },
     {
-      id: 3,
+      id: 6,
       title: "Task Manager",
       description:
         "A comprehensive task management application built with Angular and LoopBack for efficient project organization and team collaboration.",
@@ -79,7 +124,7 @@ const Projects = () => {
       githubUrl: "https://github.com/ayoubkefii/task-manager",
     },
     {
-      id: 4,
+      id: 7,
       title: "Conference Manager",
       description:
         "A Symfony-based conference management system for organizing events, managing attendees, and coordinating schedules.",
@@ -93,7 +138,7 @@ const Projects = () => {
       githubUrl: "https://github.com/ayoubkefii/conference-manager",
     },
     {
-      id: 5,
+      id: 8,
       title: "E-Learning Platform",
       description:
         "A comprehensive e-learning platform built with Symfony framework for course management and student progress tracking.",
@@ -107,7 +152,7 @@ const Projects = () => {
       githubUrl: "https://github.com/ayoubkefii/e-learning-platform",
     },
     {
-      id: 6,
+      id: 9,
       title: "LearnUp",
       description:
         "A PHP native e-learning application with user authentication, course management, and interactive learning features.",
@@ -121,7 +166,7 @@ const Projects = () => {
       githubUrl: "https://github.com/ayoubkefii/learnup",
     },
     {
-      id: 7,
+      id: 10,
       title: "Camping Web App",
       description:
         "A Symfony-based web app for renting camping gear, suggesting materials, and organizing events.",
@@ -135,7 +180,7 @@ const Projects = () => {
       githubUrl: "https://github.com/ayoubkefii/camping-web-app",
     },
     {
-      id: 8,
+      id: 11,
       title: "FlutterLearn",
       description:
         "A mobile e-learning app built with Flutter and a PHP/MySQL backend (REST API, JWT auth).",
@@ -149,7 +194,7 @@ const Projects = () => {
       githubUrl: "https://github.com/ayoubkefii/e_learning-",
     },
     {
-      id: 9,
+      id: 12,
       title: "Recipe Book App",
       description:
         "A full-stack Angular + LoopBack app with recipe listing, filtering, and favorites.",
@@ -163,7 +208,7 @@ const Projects = () => {
       githubUrl: "https://github.com/ayoubkefii/recipe-book-app",
     },
     {
-      id: 10,
+      id: 13,
       title: "Portfolio Website",
       description:
         "My personal portfolio built with React, Tailwind, and Framer Motion.",
@@ -177,7 +222,7 @@ const Projects = () => {
       githubUrl: "https://github.com/ayoubkefii/Ayoub-Kefi-Portfolio",
     },
     {
-      id: 11,
+      id: 14,
       title: "E-Commerce Platform",
       description:
         "A React/Node.js/MySQL app with authentication and product management.",
@@ -191,37 +236,7 @@ const Projects = () => {
       githubUrl: "https://github.com/ayoubkefii/E-Commerce-Platform",
     },
     {
-      id: 12,
-      title: "PhonestoreRym",
-      description:
-        "A phone store web application for browsing and purchasing mobile devices.",
-      image:
-        "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500&h=300&fit=crop",
-      category: "web",
-      technologies: ["JavaScript", "HTML", "CSS"],
-      featured: false,
-      rating: 4,
-      date: "2025",
-      githubUrl: "https://github.com/ayoubkefii/PhonestoreRym",
-      liveUrl: "https://rym-gsm-store.netlify.app/",
-    },
-    {
-      id: 13,
-      title: "4mediagency Website",
-      description:
-        "Premium digital marketing agency website showcasing services and portfolio.",
-      image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
-      category: "web",
-      technologies: ["TypeScript", "React", "Tailwind CSS"],
-      featured: true,
-      rating: 5,
-      date: "2025",
-      githubUrl: "https://github.com/ayoubkefii/4mediagency-website",
-      liveUrl: "https://4mediagency.netlify.app/",
-    },
-    {
-      id: 14,
+      id: 15,
       title: "Task Manager Laravel",
       description:
         "A Laravel-based task management application with full CRUD operations.",
@@ -233,21 +248,6 @@ const Projects = () => {
       rating: 4,
       date: "2025",
       githubUrl: "https://github.com/ayoubkefii/task_manager_laravel",
-    },
-    {
-      id: 15,
-      title: "ChallengeLounge",
-      description:
-        "A challenge-based platform for competitive coding and problem-solving.",
-      image:
-        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500&h=300&fit=crop",
-      category: "web",
-      technologies: ["JavaScript", "HTML", "CSS"],
-      featured: false,
-      rating: 4,
-      date: "2025",
-      githubUrl: "https://github.com/ayoubkefii/ChallengeLounge",
-      liveUrl: "https://challenge-lounge.netlify.app/",
     },
   ];
 
