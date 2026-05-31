@@ -201,7 +201,7 @@ const Contact = () => {
                       />
                     </motion.a>
                     <motion.a
-                      href="https://wa.me/216XXXXXXXXXX"
+                      href="https://wa.me/21625573007"
                       target="_blank"
                       rel="noopener noreferrer"
                       initial={{ opacity: 0, scale: 0 }}

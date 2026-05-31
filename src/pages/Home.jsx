@@ -71,12 +71,12 @@ const Home = () => {
           className="absolute inset-0 bg-animated"
         />
 
-        {/* Mesh Gradient Overlay */}
-        <div className="absolute inset-0 mesh-gradient opacity-50"></div>
+        {/* Mesh Gradient Overlay - Reduced opacity */}
+        <div className="absolute inset-0 mesh-gradient opacity-30"></div>
 
-        {/* Particle Background */}
+        {/* Particle Background - Reduced for performance */}
         <div className="absolute inset-0 overflow-hidden">
-          {[...Array(20)].map((_, i) => (
+          {[...Array(8)].map((_, i) => (
             <div
               key={i}
               className="particle"
@@ -90,33 +90,19 @@ const Home = () => {
           ))}
         </div>
 
-        {/* Enhanced Floating Elements with 3D Effect */}
+        {/* Floating Elements - Reduced for performance */}
         <motion.div
           style={{ y: useTransform(scrollYProgress, [0, 1], ["0%", "120%"]) }}
           variants={floatingVariants}
           animate="animate"
-          className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-amber-500/30 to-yellow-500/30 rounded-full blur-3xl"
+          className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-amber-500/20 to-yellow-500/20 rounded-full blur-2xl"
         />
         <motion.div
           style={{ y: useTransform(scrollYProgress, [0, 1], ["0%", "-120%"]) }}
           variants={floatingVariants}
           animate="animate"
           transition={{ duration: 8, delay: 1 }}
-          className="absolute bottom-20 right-10 w-40 h-40 bg-gradient-to-br from-yellow-500/30 to-orange-500/30 rounded-full blur-3xl"
-        />
-        <motion.div
-          style={{ y: useTransform(scrollYProgress, [0, 1], ["0%", "180%"]) }}
-          variants={floatingVariants}
-          animate="animate"
-          transition={{ duration: 7, delay: 2 }}
-          className="absolute top-1/2 left-1/4 w-24 h-24 bg-gradient-to-br from-amber-400/30 to-yellow-400/30 rounded-full blur-3xl"
-        />
-        <motion.div
-          style={{ y: useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]) }}
-          variants={floatingVariants}
-          animate="animate"
-          transition={{ duration: 9, delay: 0.5 }}
-          className="absolute top-1/3 right-1/4 w-20 h-20 bg-gradient-to-br from-orange-500/30 to-amber-500/30 rounded-full blur-3xl"
+          className="absolute bottom-20 right-10 w-40 h-40 bg-gradient-to-br from-yellow-500/20 to-orange-500/20 rounded-full blur-2xl"
         />
 
         {/* Animated Grid Pattern */}
@@ -295,7 +281,7 @@ const Home = () => {
 
       {/* Tech Stack Section */}
       <section className="section-padding relative overflow-hidden">
-        <div className="absolute inset-0 mesh-gradient opacity-30"></div>
+        <div className="absolute inset-0 mesh-gradient opacity-15"></div>
         <div className="container-custom relative z-10">
           <ScrollReveal direction="up" delay={0.2}>
             <div className="text-center mb-16">
@@ -316,7 +302,7 @@ const Home = () => {
 
       {/* About Preview Section */}
       <section id="about-section" className="section-padding relative overflow-hidden">
-        <div className="absolute inset-0 mesh-gradient opacity-30"></div>
+        <div className="absolute inset-0 mesh-gradient opacity-15"></div>
         <div className="container-custom relative z-10">
           <ScrollReveal direction="up" delay={0.2}>
             <div className="text-center">
